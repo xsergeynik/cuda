@@ -1,0 +1,655 @@
+/* styles */
+
+body {
+	min-width: 480px;
+	background: #eee;
+	font-family: 'Proxima Nova', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #222;
+	cursor: default;
+}
+
+.main_wrapper {
+	margin: 0 auto;
+	width: 480px;
+	background: #fff;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+b {
+	font-weight: 700;
+}
+
+/**
+ *	This element is created inside your target element
+ *	It is used so that your own element will not need to be altered
+ **/
+ .el-timer {
+    width: 370px;
+	height: 125px;
+    margin: 0 auto;
+ }
+
+.time_circles {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/**
+ *	This is all the elements used to house all text used
+ * in time circles
+ **/
+.time_circles > div {
+    position: absolute;
+    text-align: center;
+}
+
+/**
+ *	Titles (Days, Hours, etc)
+ **/
+.time_circles > div > h4 {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+.el-timer2 .time_circles > div > h4 {
+    color: #a1e019;
+}
+
+/**
+ *	Time numbers, ie: 12
+ **/
+.time_circles > div > span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 300%;
+    margin-top: 0.4em;
+    font-weight: 400;
+    color: #fff;
+}
+.el-timer2 .time_circles > div > span {
+    color: #a1e019;
+}
+
+/* button */
+
+.button {
+	display: block;
+	margin: 0 auto;
+	width: 400px;
+	height: 78px;
+	border: none;
+	background: #fed137;
+	-webkit-box-shadow: 0 5px 0 #cf9532;
+	-moz-box-shadow: 0 5px 0 #cf9532;
+	box-shadow: 0 5px 0 #cf9532;
+	font-family: 'Proxima Nova', sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 78px;
+	letter-spacing: 2px;
+	color: #fff;
+	text-shadow: 0 2px 0 #cf9532;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+}
+
+/* titles */
+
+h2 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2 span {
+	display: block;
+	color: #;
+}
+
+/* offer */
+
+.offer_section {
+	background: #1e2026;
+}
+
+section.offer_section {
+	padding: 0 0 25px;
+}
+
+.offer_section:after {
+	display: block;
+	margin: 25px 0 0;
+	content: '';
+	border-top: 20px solid #1e2026;
+	border-left: 240px solid #fff;
+	border-right: 240px solid #fff;
+}
+
+section.offer_section:after {
+	display: none;
+}
+
+.offer_section ul {
+	padding: 15px 20px;
+	background: #fff;
+}
+
+.offer_section ul li {
+	float: left;
+	padding: 0 60px 0 48px;
+	width: 55%;
+	background: url(../images/offer__tick_icon.png) left center no-repeat;
+	line-height: 20px;
+}
+
+.offer_section ul li:last-child {
+	padding: 0 0 0 48px;
+	width: 45%;
+}
+
+.offer_section .main_title {
+	padding: 10px;
+	background: #000000;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: 2px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.offer_section .info_block {
+	padding: 13px 0 0;
+	height: 422px;
+	background: url(../images/mainphotolids.png) center top no-repeat;
+}
+
+section.offer_section .info_block {
+	background-image: url(../images/lastphoto.png);
+}
+
+.offer_section .info_block .subtitle {
+	margin: 0 20px 313px 230px;
+	font-size: 20px;
+	line-height: 24px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.offer_section .info_block .discount {
+	margin: 0 0 0 5px;
+	font-size: 32px;
+	line-height: 32px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.offer_section .info_block .discount b {
+	margin: 0 0 0 40px;
+	color: #cf162f;
+}
+
+.offer_section .price_block {
+	margin: 25px 40px;
+	background: url(../images/offer__price_arrow.png) center no-repeat;
+}
+
+.offer_section .price_block .price_item {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.offer_section .price_block .price_item.old {
+	padding: 0 12px 0 0;
+	color: #fff;
+}
+
+.offer_section .price_block .price_item.new {
+	padding: 0 0 0 12px;
+	color: #fed137;
+}
+
+.offer_section .price_block .text {
+	margin: 0 0 4px;
+	font-size: 14px;
+	line-height: 14px;
+	text-transform: uppercase;
+}
+
+.offer_section .price_block .value {
+	font-size: 34px;
+	line-height: 34px;
+}
+
+.offer_section .price_block .price_item.old .value {
+	text-decoration: line-through;
+}
+
+.offer_section .price_block .price_item.new .value {
+	font-weight: 700;
+}
+
+.offer_section .field {
+	display: block;
+	margin: 0 auto 20px;
+	padding: 0 20px;
+	width: 400px;
+	height: 62px;
+	border: none;
+	background: #fff;
+	font-family: 'Proxima Nova', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #333;
+}
+
+.offer_section .field::-webkit-input-placeholder {
+	opacity: 1;
+	color: #333;
+}
+
+.offer_section .field:-moz-placeholder {
+	opacity: 1;
+	color: #333;
+}
+
+.offer_section .field::-moz-placeholder {
+	opacity: 1;
+	color: #333;
+}
+
+.offer_section .field:-ms-input-placeholder {
+	opacity: 1;
+	color: #333;
+}
+
+.offer_section .field:focus::-webkit-input-placeholder {
+	opacity: 0;
+}
+
+.offer_section .field:focus:-moz-placeholder {
+	opacity: 0;
+}
+
+.offer_section .field:focus::-moz-placeholder {
+	opacity: 0;
+}
+
+.offer_section .field:focus:-ms-input-placeholder {
+	opacity: 0;
+}
+
+.offer_section .products_count {
+	margin: 30px 0 0;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+	text-align: center;
+}
+
+.offer_section .products_count:before {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 10px 0 0;
+	content: '';
+	width: 23px;
+	height: 21px;
+	background: url(../images/attention.png) center no-repeat;
+}
+
+.offer_section .products_count b {
+	color: #bd1a1a;
+}
+
+/* benefits */
+
+.benefits_section {
+	padding: 30px 20px 35px;
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#ececec), to(#fff));
+	background-image: -webkit-linear-gradient(bottom, #ececec 0%, #fff 100%);
+	background-image: -moz-linear-gradient(bottom, #ececec 0%, #fff 100%);
+	background-image: -o-linear-gradient(bottom, #ececec 0%, #fff 100%);
+	background-image: linear-gradient(to top, #ececec 0%, #fff 100%);
+}
+
+.benefits_section h2 {
+	margin: 0 0 30px;
+}
+
+.benefits_section .benefit_item {
+	margin: 0 20px 30px;
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.benefits_section .benefit_item img {
+	display: block;
+	margin: 0 auto 10px;
+}
+
+/* about */
+
+.about_section {
+	padding: 30px 0 0;
+}
+
+.about_section h2 {
+	margin: 0 20px 20px;
+}
+
+.about_section p {
+	padding: 0 20px;
+	font-size: 18px;
+	line-height: 26px;
+	text-align: left;
+	position: relative;
+}
+
+.about_section .video_block {
+	margin: 25px 0;
+	width: 480px;
+	height: 270px;
+	background-color: #000;
+	overflow: hidden;
+	position: relative;
+}
+
+.about_section .video_block iframe,
+.about_section .video_block object,
+.about_section .video_block embed {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.about_section img {
+	display: block;
+	margin: 25px auto 0;
+}
+
+/* benefits 2 */
+
+.benefits2_section {
+	padding: 30px 0 25px;
+	background: #3f414f url(../images/benefits2_bg.jpg) center top no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-s
+	ize: cover;
+	color: #fff;
+	position: relative;
+}
+
+.benefits2_section h2 {
+	margin: 0 20px 30px;
+}
+
+.benefits2_section h2 span {
+	color:  #fed137;
+}
+
+.benefits2_section ul li {
+	padding: 15px 20px 15px 63px;
+	position: relative;
+}
+
+.benefits2_section ul li:nth-child(odd) {
+	background: rgba(31,35,47,0);
+}
+
+.benefits2_section ul li:before {
+	display: block;
+	content: '';
+	width: 33px;
+	height: 33px;
+	background: url(../images/benefits2__tick_icon.png) center no-repeat;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+
+/* reviews */
+
+.reviews_section {
+	padding: 30px 20px 50px;
+	background: #f6f6f6;
+	position: relative;
+}
+
+.reviews_section:after {
+	display: block;
+	content: '';
+	border-top: 20px solid rgba(255,255,255,0);
+	border-left: 240px solid #292c3b;
+	border-right: 240px solid #292c3b;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.reviews_section h2 {
+	margin: 0 0 30px;
+}
+
+.reviews_section .review_item img {
+	display: block;
+	margin: 0 auto 20px;
+	width: 192px;
+	border: 6px solid #d0d0d0;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.reviews_section .text_block {
+	padding: 20px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #fff;
+	text-align: center;
+}
+
+.reviews_section .text_block .author_info {
+	margin: 0 0 10px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+	color: #2a2e3b;
+	text-transform: uppercase;
+}
+
+.reviews_section .text_block p {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.reviews_section .owl-prev,
+.reviews_section .owl-next {
+	width: 32px;
+	height: 51px;
+	background: url(../images/reviews__arrows.png) no-repeat;
+	position: absolute;
+	top: 70px;
+}
+
+.reviews_section .owl-prev {
+	background-position: left center;
+	left: 50px;
+}
+
+.reviews_section .owl-next {
+	background-position: right center;
+	right: 50px;
+}
+
+/* order list */
+
+.order_list{
+	font-size: 0;
+}
+.order_list>li{
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.2em;
+	margin-bottom: 20px;
+	text-align: center;
+	padding: 0 15px;
+}
+.order_list>li>span{
+	font-size: 19px;
+	font-weight: 700;
+	display: block;
+	margin-bottom: 4px;
+}
+.order_list>li:before{
+	content: '';
+	display: block;
+	height: 85px;
+	margin: 0 auto 15px;
+}
+.order_list>li:nth-child(1):before{
+	background: url(../images/order_icons.png) 50% 0% no-repeat;
+}
+.order_list>li:nth-child(2):before{
+	background: url(../images/order_icons.png) 50% -85px no-repeat;
+}
+.order_list>li:nth-child(3):before{
+	background: url(../images/order_icons.png) 50% -170px no-repeat;
+}
+.order_list>li:nth-child(4):before{
+	background: url(../images/order_icons.png) 50% -255px no-repeat;
+}
+
+/* order info */
+
+.order_info_section {
+	padding: 30px 20px;
+}
+
+.order_info_section h2 {
+	margin: 0 0 30px;
+	color: #292d3b;
+}
+
+.order_info_section .info_item {
+	display: table;
+	margin: 0 0 25px;
+	padding: 0 0 26px;
+	width: 100%;
+	position: relative;
+}
+
+.order_info_section .info_item:last-child {
+	margin: 0;
+	padding: 0;
+}
+
+.order_info_section .info_item:before {
+	display: block;
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: #d6d6d6;
+	background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(50%, #d6d6d6), to(#fff));
+	background-image: -webkit-linear-gradient(left, #fff 0%, #d6d6d6 50%, #fff 100%);
+	background-image: -moz-linear-gradient(left, #fff 0%, #d6d6d6 50%, #fff 100%);
+	background-image: -o-linear-gradient(left, #fff 0%, #d6d6d6 50%, #fff 100%);
+	background-image: linear-gradient(to right, #fff 0%, #d6d6d6 50%, #fff 100%);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.order_info_section .info_item:last-child:before {
+	display: none;
+}
+
+.order_info_section .info_item .icon_block {
+	display: table-cell;
+	vertical-align: middle;
+	width: 90px;
+}
+
+.order_info_section .info_item .icon {
+	width: 75px;
+	height: 75px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #292d3b center no-repeat;
+}
+
+.order_info_section .info_item:nth-child(1) .icon {
+	background-image: url(../images/order_info__info1_icon.png);
+}
+
+.order_info_section .info_item:nth-child(2) .icon {
+	background-image: url(../images/order_info__info2_icon.png);
+}
+
+.order_info_section .info_item:nth-child(3) .icon {
+	background-image: url(../images/order_info__info3_icon.png);
+}
+
+.order_info_section .info_item .text_block {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 20px;
+}
+
+.order_info_section .info_item h4 {
+	margin: 0 0 4px;
+	font-weight: 700;
+}
+
+/* footer */
+
+.footer_section {
+	padding: 25px 0;
+	background: #252933;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: center;
+}
+
+.footer_section img {
+	display: block;
+	margin: 0 auto 10px auto;
+}
+
+.footer_section a {
+	color: #ccc;
+}
