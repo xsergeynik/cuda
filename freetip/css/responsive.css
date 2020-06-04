@@ -1,0 +1,45 @@
+
+@media (max-width: 576px) {
+	.offer {
+		   background: #f6eee9 url(../img/offer.png) -5% 100% / 132% no-repeat;
+	}	
+	.logo {
+		max-width: 80%;
+	}
+	.offer__slide {
+		display: none;
+	}
+	.checks__row {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		justify-content: center;
+		
+	}
+	.checks__column{
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	.checks__row {
+		flex-wrap: wrap;
+		justify-content: center;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		
+	}
+	.checks__column{
+		flex: 0 0 50%;
+		margin-bottom: 30px;
+
+	}
+	.checks {
+	padding-bottom: 50px;
+}
+}
