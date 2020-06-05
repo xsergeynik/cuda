@@ -171,11 +171,15 @@ p {
 
 .content {
 	padding: 24px 0px 67px 0px;
-	display: -webkit-flex;
+
+}
+.content .container{
+		display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	justify-content: space-between;
 }
 
 .main {
@@ -184,9 +188,9 @@ p {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	justify-content: space-between;
-}
 
+}
+		
 .main-form {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -249,7 +253,7 @@ p {
     padding: 14px 0;
     background-color: #ebce0d;
     color: #272c2f;
-    margin: 11px 0px 22px 0;
+    margin: 0px 0px 22px 0;
 }
 
 .main-form__btn:hover {
@@ -266,7 +270,7 @@ p {
 	background-color: #184c6b;
 	border-radius: 10px;
 	color: #c0ddee;
-	width: 550px;
+	width: 547px;
 
 }
 
